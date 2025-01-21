@@ -1,0 +1,77 @@
+Questions et réponses 
+
+1. Le Spanning Tree (STP) est un protocole qui permet de désactiver temporairement certains chemins redondants afin d'éviter les boucles dans les réseaux.
+Exemple: Dans un réseau où il y a trois switch connectés en triangle avec des terminaux, le STP permet de désactiver temporairement un chemin pour éviter une boucle dans le réseau et de le réactiver si un autre chemins tombe en panne.
+
+
+2. La redondance est une stratégie clé de la haute disponibilité. Elle consiste à
+dupliquer les équipements, les chemins ou les liens pour éviter les points uniques
+de défaillance.
+Elle permet de créer plusieurs routes entre les équipements pour garantir la
+connectivité en cas de panne.
+
+
+3.HSRP (Hot Standby Router Protocol), VRRP (Virtual Router Redundancy Protocol) et GLBP (Gateway Load Balancing Protocol) sont tous des protocoles de redondance de routeurs qui permettent à plusieurs routeurs de se comporter comme un seul routeur virtuel avec une adresse IP et un MAC virtuels pour une haute disponibilité optimale.
+
+La différence entre est que HSRP est un protocole de redondance de base et est conçu uniquement pour les équipements cisco, VRRP prend en charge la répartition de charge et GLBP offre des fonctionnalités avancées de répartition de charge et de routage pondérée.
+
+HSRP est un protocole de redondance de routeur de base qui permet à un routeur actif de prendre en charge les adresses IP et MAC virtuelles et de les transférer à un routeur de secours en cas de défaillance. HSRP ne prend pas en charge la répartition de charge entre les routeurs actifs.
+
+VRRP est similaire à HSRP, mais il prend en charge la répartition de charge en permettant à plusieurs routeurs actifs de partager la charge de travail. Les routeurs actifs VRRP envoient des annonces à intervalles réguliers pour déterminer le routeur actif.
+
+GLBP est un protocole de répartition de charge de passerelle qui prend en charge la répartition de charge en permettant à plusieurs routeurs de partager la charge de travail. Contrairement à VRRP, GLBP utilise une méthode de répartition de charge active-active qui permet à plusieurs routeurs d'accepter du trafic simultanément. GLBP utilise également une fonction de routage pondérée pour répartir la charge de manière plus équitable entre les routeurs actifs.
+
+
+3.Les trois principaux supports de transmission sont:
+Cuivre
+*Particularités :
+	Utilise des câbles métalliques (paires torsadées ou coaxiaux) pour transmettre des signaux électriques.
+	Bonne conductivité et largement répandu.
+	Moins coûteux que d'autres technologies.
+*Contraintes :
+	Sensible aux interférences électromagnétiques et aux parasites.
+	Distance limitée sans amplification (environ 100 mètres pour les câbles Ethernet).
+	Risque de corrosion dans les environnements humides.
+	Moins performant pour les débits élevés comparé à la fibre optique.
+*Cas d’utilisation :
+	Réseaux locaux (LAN) dans les entreprises et les domiciles (câbles Ethernet).
+	ligne téléphonique.
+	Télévision câblée.
+
+Fibre optique
+*Particularités :
+	Transmet des données sous forme de signaux lumineux.
+	Immense capacité de bande passante et faible atténuation sur de longues distances.
+	Insensible aux interférences électromagnétiques.
+*Contraintes :
+	Coût élevé.
+	Fragile.
+	Complexe pour les réparations.
+*Cas d’utilisation :
+	Connexions haut débit dans les entreprises et les domiciles.
+	Réseaux intercontinentaux sous-marins.
+
+Ondes électromagnétiques
+*Particularités :
+	Utilise des signaux radio, micro-ondes ou infrarouges pour la transmission sans fil.
+	Permet la mobilité et la communication dans des zones difficiles d'accès.
+	Ne nécessite pas de support physique comme les câbles.
+*Contraintes :
+	Sensibilité aux interférences.
+	Distance limitée pour certains types de fréquences (ex. : Wi-Fi).
+	Problèmes de sécurité si les transmissions ne sont pas correctement sécurisées.
+*Cas d’utilisation :
+	Réseaux mobiles (3G, 4G, 5G) et Wi-Fi.
+	Communications satellites et TV par satellite.
+	Bluetooth et autres technologies IoT (Internet of Things).
+
+
+############################################################################################################
+
+
+QCM : Protocoles et Concepts
+
+1.C (STP)
+2.B (MTTR)
+3.B (Répartir les charges entre plusieurs chemins ou serveurs.)
+
